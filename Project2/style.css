@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tektur', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    background-image: url(images/hudProject2Wallpaper.jpg);
+    padding: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #023b39;
+    border-radius: 20px;
+}
+
+.SB {
+    display: flex;
+    width: 100px;
+}
+
+.side-bar {
+    width: 550px;
+    min-height: 470px;
+    color: white;
+    font-family: 'Tektur';
+    backdrop-filter: blur(5px);
+    border: solid 1px #13e0a6;
+    margin: 100px auto 20px;
+    padding: 20px 20px 0px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-app {
+    overflow: auto;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-between;
+    background: #fff2;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.SB {
+    width: 30px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: rgb(231, 226, 226);
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #13e0a6;
+    color: rgb(231, 226, 226);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 7px;
+}
+
+ul li.checked {
+    color: #4bdef3;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/Checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #4bdef3;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+ul li span:hover {
+    color: #222;
+    background: #4bdef3;
+}
+
+/* Media Queries */
+
+/* For small devices (up to 767px) */
+@media (max-width: 767px) {
+    .side-bar {
+        width: 100%;
+        height: auto;
+        margin: 50px auto 20px;
+        padding: 10px;
+    }
+}
+
+/* For medium devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .side-bar {
+        width: 80%;
+        height: auto;
+        margin: 50px auto 20px;
+        padding: 10px;
+    }
+}
+
+/* For large devices (992px and above) */
+@media (min-width: 992px) {
+    .side-bar {
+        width: 550px;
+        min-height: 470px;
+        margin: 100px auto 20px;
+        padding: 20px 20px 0px 50px;
+    }
+}
+
+/* nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 33px 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Tektur';
+}
+.temp:hover, .city:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+} */
