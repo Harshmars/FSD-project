@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tektur';
+    box-sizing: border-box;
+}
+body{
+    background:  url(images/_27x_corxdm4eq_57707034.jpg);
+    color: #fff;
+}
+.container{
+    backdrop-filter: blur(5px);
+    border: solid 1px #13cfe0;
+    margin: 12%;
+    width: 90%;
+    padding: 45px 25px;
+    border-radius: 32px;
+    max-width: 700px;
+}
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+.container h1 span{
+    color: #13cfe0;
+    border-bottom: 4px solid #13cfe0;
+    padding-bottom: 7px;
+}
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(45px);
+    border: solid 1px #138ee0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 9px; 
+}
+ 
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+.display p{
+
+    font-size: 25px;
+}
+.display img{
+ width: 30px;
+ cursor: pointer;
+}
+.container button img{
+    width: 28px;
+    margin-right: 10px;
+}
+.container button{
+    border: 0;
+    outline: 0;
+    background: #138ee0;
+    color: #242222;
+    font-size: 22px;
+    font-weight: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 9px;
+    cursor: pointer;
+}
